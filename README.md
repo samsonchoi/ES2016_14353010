@@ -4,20 +4,17 @@
 
 -------------------
 
-[TOC]
 
 ## Description
 
 
 The distributed operation layer (DOL) is a software development framework to program parallel applications. The DOL allows to specify applications based on the Kahn process network model of computation and features a simulation engine based on SystemC. Moreover, the DOL provides an XML-based specification format to describe the implementation of a parallel application on a multi-processor systems, including binding and mapping.
-![Alt text](./图片1.png)
 
 
 ## How to install
 
 
 ###1.安装VMWARE及Ubuntu
-![Alt text](./K_6C8MJ]UWOJ$C5K7KRS.png)
 
 ###2.安装一些必要的环境
 `$	sudo apt-get update`
@@ -46,13 +43,10 @@ The distributed operation layer (DOL) is a software development framework to pro
 `$	cd objdir`
 运行configure(能根据系统的环境设置一下参数，用于编译)
 `$	../configure CXX=g++ --disable-async-updates`
-结果如下：
-![Alt text](./图片2.png)
 编译
 `$	sudo make install`
 编译完后文件目录如下
 `$ cd ..        $ ls`
-![Alt text](./图片3.png)
 记录当前的工作路径
 `$	pwd`
 
@@ -66,8 +60,6 @@ The distributed operation layer (DOL) is a software development framework to pro
 `$	cd build/bin/main`
 然后运行第一个例子
 `$	ant -f runexample.xml -Dnumber=1`
-结果如下：
-![Alt text](./图片4.png)
 
 
 ## Experimental experience
